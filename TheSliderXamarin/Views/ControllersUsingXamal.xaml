@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TheSliderXamarin.Views.ControllersUsingXamal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hello from XAML!"
+                 IsVisible="True"
+                 Opacity="0.75"
+                 HorizontalTextAlignment="Center"
+                 VerticalOptions="CenterAndExpand"
+                 TextColor="Blue"
+                 BackgroundColor="#FF8080"
+                 FontSize="Large"
+                 FontAttributes="Bold,Italic" />
+
+            <Frame OutlineColor="Accent"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center">
+                <Frame.Content>
+                    <Label Text="This label inside of frame" />
+                </Frame.Content>
+            </Frame>            <Frame HorizontalOptions="Center">
+                <Frame.VerticalOptions>
+                    Center
+                </Frame.VerticalOptions>
+                <Frame.OutlineColor>
+                    Accent
+                </Frame.OutlineColor>
+                <Frame.Content>
+                    <Label>
+                        <Label.Text>
+                            Greetings, Xamarin.Forms!
+                        </Label.Text>
+                    </Label>
+                </Frame.Content>
+            </Frame>            <StackLayout HorizontalOptions="Center">
+                <StackLayout.Children>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout.Children>
+                            <BoxView Color="Red"/>
+                            <Label Text="Red"
+                            VerticalOptions="Center" />
+                        </StackLayout.Children>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout.Children>
+                            <BoxView Color="Green" />
+                            <Label Text="Green"
+                                 VerticalOptions="Center" />
+                        </StackLayout.Children>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout.Children>
+                            <BoxView Color="Blue" />
+                            <Label Text="Blue" VerticalOptions="Center" />
+                        </StackLayout.Children>
+                    </StackLayout>
+                </StackLayout.Children>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
